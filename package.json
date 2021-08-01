@@ -6,7 +6,6 @@
   "repository": "git@github.com:nagaremono/ts-express-server-template.git",
   "author": "nagaremono <nagaremono@tutanota.com>",
   "license": "MIT",
-  "private": false,
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
