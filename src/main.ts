@@ -1,7 +1,14 @@
-async function main() {
-  setTimeout(() => {
-    console.log("hello world");
-  }, 4000);
-}
+import app from './app';
 
-main()
+function main() {
+  const server = app.listen(4000, () => {
+    console.log('server started on *:4000');
+  });
+
+  process.on('SIGTERM', () => {
+    server.close(() => {
+      console.log('Server terminated');
+    });
+  });
+}
+main();
