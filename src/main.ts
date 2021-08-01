@@ -1,3 +1,7 @@
-setInterval(() => {
-  console.log('hello world');
-}, 3000);
+async function main() {
+  setTimeout(() => {
+    console.log("hello world");
+  }, 4000);
+}
+
+main()
