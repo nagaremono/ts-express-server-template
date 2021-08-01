@@ -12,7 +12,7 @@
     "start": "node dist/main.js",
     "watch-ts": "tsc -w",
     "watch-node": "nodemon dist/main.js",
-    "dev": "concurrently -k -p \"[{name}]\" -n \"Typescript,Node\" -c \"black.bgBlue,black.bgGreen\" \"npm:watch-ts\" \"npm:watch-node\"",
+    "dev": "concurrently -k -p \"[{name}]\" -n \"Typescript,Node\" -c \"black.bgBlue,black.bgGreen\" \"yarn run watch-ts\" \"yarn run watch-node\"",
     "lint": "eslint . --ext .ts,.js"
   },
   "devDependencies": {
