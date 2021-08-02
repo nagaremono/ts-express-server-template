@@ -1949,6 +1949,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"http-status-codes@npm:^2.1.4":
+  version: 2.1.4
+  resolution: "http-status-codes@npm:2.1.4"
+  checksum: 44fedd7b2cfe8672e647fd03a1baf6662a62e7bf1669a866404830e98853dc0239b5cd054938e562cdd7b8228a9a7bc0e27b0eacc6a07814b1639a9c518a7220
+  languageName: node
+  linkType: hard
+
 "https-proxy-agent@npm:^5.0.0":
   version: 5.0.0
   resolution: "https-proxy-agent@npm:5.0.0"
@@ -3784,6 +3791,7 @@ resolve@^1.10.0:
     eslint-config-prettier: ^8.3.0
     express: ^4.17.1
     helmet: ^4.6.0
+    http-status-codes: ^2.1.4
     joi: ^17.4.1
     morgan: ^1.10.0
     nodemon: ^2.0.12

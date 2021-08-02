@@ -2,7 +2,7 @@ import morgan from 'morgan';
 import { Request, Response } from 'express';
 import logger from '../config/logger';
 
-morgan.token('message', (_: Request, res: Response) => res.locals.errorMessage || 'bbb');
+morgan.token('message', (_: Request, res: Response) => res.locals.errorMessage || '');
 
 const successFormat = `[:date[iso]] :remote-addr - :method :url :status - :response-time ms`;
 const errorFormat = `${successFormat} - message: :message`;
