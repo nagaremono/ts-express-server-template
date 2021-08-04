@@ -9,4 +9,5 @@ module.exports = {
     'postgres://postgres:postgres@localhost:5433/ts_express_template',
   logging: process.env.logging || true,
   synchronize: process.env.synchronize || true,
+  uuidExtension: 'pgcrypto',
 };
