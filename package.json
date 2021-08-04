@@ -36,7 +36,10 @@
     "http-status-codes": "^2.1.4",
     "joi": "^17.4.1",
     "morgan": "^1.10.0",
+    "pg": "^8.7.1",
+    "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
+    "typeorm": "^0.2.36",
     "winston": "^3.3.3"
   },
   "engines": {

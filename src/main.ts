@@ -1,8 +1,11 @@
+import 'reflect-metadata';
+import { createConnection } from 'typeorm';
 import app from './app';
 import CONFIG from './config/config';
 import logger from './config/logger';
 
-function main() {
+async function main() {
+  await createConnection();
   const server = app.listen(CONFIG.PORT, () => {
     logger.info(`server started on *:${CONFIG.PORT}`);
   });
